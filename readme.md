@@ -4,7 +4,8 @@
 
 ## output
 
-output are images in `imgs`
+output are images in `imgs`.
+Each hemisphere was rotated from 0 to 270 by 90 deg. Then again with both hemispheres visibile.
 
 ## pipeline
 
