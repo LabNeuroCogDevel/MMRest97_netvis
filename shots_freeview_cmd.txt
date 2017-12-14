@@ -1,16 +1,16 @@
 -hide-3d-slices -nocursor -noquit  
- -f fsaverage/lh.pial:annot=fsaverage/lh.20171214_nets.annot 
+ -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets.annot 
    -cam Azimuth   0 -ss imgs/lh_0.png  2 
    -cam Azimuth  90 -ss imgs/lh_90.png 2 
    -cam Azimuth 180 -ss imgs/lh_180.png 2 
    -cam Azimuth 270 -ss imgs/lh_270.png 2 
    -hide surface
- -f fsaverage/rh.pial:annot=fsaverage/rh.20171214_nets.annot 
+ -f fsaverage/rh.inflated:annot=fsaverage/rh.20171214_nets.annot 
    -cam Azimuth   0 -ss imgs/rh_0.png 2 
    -cam Azimuth  90 -ss imgs/rh_90.png 2 
    -cam Azimuth 180 -ss imgs/rh_180.png 2 
    -cam Azimuth 270 -ss imgs/rh_270.png 2 
- -f fsaverage/lh.pial:annot=fsaverage/lh.20171214_nets.annot 
+ -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets.annot 
    -cam Azimuth   0 -ss imgs/both_0.png 2 
    -cam Azimuth  90 -ss imgs/both_90.png 2 
    -cam Azimuth 180 -ss imgs/both_180.png 2 
