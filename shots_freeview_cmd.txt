@@ -1,18 +1,38 @@
--hide-3d-slices -nocursor -noquit  
- -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets.annot 
-   -cam Azimuth   0 -ss imgs/lh_0.png  2 
-   -cam Azimuth  90 -ss imgs/lh_90.png 2 
-   -cam Azimuth 180 -ss imgs/lh_180.png 2 
-   -cam Azimuth 270 -ss imgs/lh_270.png 2 
-   -hide surface
- -f fsaverage/rh.inflated:annot=fsaverage/rh.20171214_nets.annot 
-   -cam Azimuth   0 -ss imgs/rh_0.png 2 
-   -cam Azimuth  90 -ss imgs/rh_90.png 2 
-   -cam Azimuth 180 -ss imgs/rh_180.png 2 
-   -cam Azimuth 270 -ss imgs/rh_270.png 2 
- -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets.annot 
-   -cam Azimuth   0 -ss imgs/both_0.png 2 
-   -cam Azimuth  90 -ss imgs/both_90.png 2 
-   -cam Azimuth 180 -ss imgs/both_180.png 2 
-   -cam Azimuth 270 -ss imgs/both_270.png 2 
+-hide-3d-slices -nocursor -noquit
+   -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets_beta.annot 
+          -cam Azimuth   0 -ss imgs/beta/lh_0.png  2 
+     -cam Azimuth  90 -ss imgs/beta/lh_90.png 2 
+     -cam Azimuth 180 -ss imgs/beta/lh_180.png 2 
+     -cam Azimuth 270 -ss imgs/beta/lh_270.png 2 
+   -unload surface
+   -f fsaverage/rh.inflated:annot=fsaverage/rh.20171214_nets_beta.annot 
+          -cam Azimuth   0 -ss imgs/beta/rh_0.png  2 
+     -cam Azimuth  90 -ss imgs/beta/rh_90.png 2 
+     -cam Azimuth 180 -ss imgs/beta/rh_180.png 2 
+     -cam Azimuth 270 -ss imgs/beta/rh_270.png 2 
+   -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets_beta.annot 
+          -cam Azimuth   0 -ss imgs/beta/both_0.png  2 
+     -cam Azimuth  90 -ss imgs/beta/both_90.png 2 
+     -cam Azimuth 180 -ss imgs/beta/both_180.png 2 
+     -cam Azimuth 270 -ss imgs/beta/both_270.png 2 
+   -unload surface
+   -unload surface
+   -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets_delta.annot 
+          -cam Azimuth   0 -ss imgs/delta/lh_0.png  2 
+     -cam Azimuth  90 -ss imgs/delta/lh_90.png 2 
+     -cam Azimuth 180 -ss imgs/delta/lh_180.png 2 
+     -cam Azimuth 270 -ss imgs/delta/lh_270.png 2 
+   -unload surface
+   -f fsaverage/rh.inflated:annot=fsaverage/rh.20171214_nets_delta.annot 
+          -cam Azimuth   0 -ss imgs/delta/rh_0.png  2 
+     -cam Azimuth  90 -ss imgs/delta/rh_90.png 2 
+     -cam Azimuth 180 -ss imgs/delta/rh_180.png 2 
+     -cam Azimuth 270 -ss imgs/delta/rh_270.png 2 
+   -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets_delta.annot 
+          -cam Azimuth   0 -ss imgs/delta/both_0.png  2 
+     -cam Azimuth  90 -ss imgs/delta/both_90.png 2 
+     -cam Azimuth 180 -ss imgs/delta/both_180.png 2 
+     -cam Azimuth 270 -ss imgs/delta/both_270.png 2 
+   -unload surface
+   -unload surface
 -quit
