@@ -3,9 +3,6 @@
 # start where this script is
 cd $(dirname $0)
 
-# where to save the screenshots
-[ ! -r imgs ] && mkdir imgs
-
 # use this fsaverage/ dir by cheating
 export SUBJECTS_DIR="$(pwd)"
 
@@ -35,10 +32,17 @@ fvcmd(){
    -unload surface
 EOF
 }
+list=( $(ls -1d txt/*/) )
+[ -n "$1" ] && list=($@)
 
 echo "-hide-3d-slices -nocursor -noquit" > shots_freeview_cmd.txt
-for luttxt in txt/*/; do
+for luttxt in ${list[@]}; do
  label=$(basename $luttxt)
+
+ # make sure we have a place to put the image
+ [ ! -d imgs/$label ] && mkdir -p imgs/$label
+
+ # actually run
  fvcmd $label
 done >> shots_freeview_cmd.txt
 echo "-quit" >> shots_freeview_cmd.txt

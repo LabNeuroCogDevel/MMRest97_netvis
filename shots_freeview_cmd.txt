@@ -35,4 +35,22 @@
      -cam Azimuth 270 -ss imgs/delta/both_270.png 2 
    -unload surface
    -unload surface
+   -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets_theta.annot 
+          -cam Azimuth   0 -ss imgs/theta/lh_0.png  2 
+     -cam Azimuth  90 -ss imgs/theta/lh_90.png 2 
+     -cam Azimuth 180 -ss imgs/theta/lh_180.png 2 
+     -cam Azimuth 270 -ss imgs/theta/lh_270.png 2 
+   -unload surface
+   -f fsaverage/rh.inflated:annot=fsaverage/rh.20171214_nets_theta.annot 
+          -cam Azimuth   0 -ss imgs/theta/rh_0.png  2 
+     -cam Azimuth  90 -ss imgs/theta/rh_90.png 2 
+     -cam Azimuth 180 -ss imgs/theta/rh_180.png 2 
+     -cam Azimuth 270 -ss imgs/theta/rh_270.png 2 
+   -f fsaverage/lh.inflated:annot=fsaverage/lh.20171214_nets_theta.annot 
+          -cam Azimuth   0 -ss imgs/theta/both_0.png  2 
+     -cam Azimuth  90 -ss imgs/theta/both_90.png 2 
+     -cam Azimuth 180 -ss imgs/theta/both_180.png 2 
+     -cam Azimuth 270 -ss imgs/theta/both_270.png 2 
+   -unload surface
+   -unload surface
 -quit
